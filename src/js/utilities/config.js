@@ -2,15 +2,23 @@ function config ($stateProvider, $urlRouterProvider) {
 	$stateProvider
 		.state('root', {
 			abstract: true,
-			templateUrl: 'templates/layout.tmpl.html'
+			templateUrl: 'templates/layout.tmpl.html',
+			controller: 'LayoutController as vm'
 		})
-		.state('home', {
+		.state('root.home', {
+			url: '/',
 			templateUrl: 'templates/home.tmpl.html',
-			url: '/'
+			controller: 'HomeController as vm'
 		})
-		.state('projects', {
+		.state('root.projects', {
+			url: '/projects',
 			templateUrl: 'templates/projects.tmpl.html',
-			url: '/projects'
+			controller: 'ProjectsController as vm'
+		})
+		.state('root.contact', {
+			url: '/contact',
+			templateUrl: 'templates/contact.tmpl.html',
+			controller: 'ContactController as vm'
 		})
 
 	$urlRouterProvider.otherwise('/#/')
