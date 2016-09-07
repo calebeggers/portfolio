@@ -1,5 +1,5 @@
 function HomeController () {
-
+	
 };
 
 HomeController.$inject = [];

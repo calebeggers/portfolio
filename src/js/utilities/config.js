@@ -21,7 +21,7 @@ function config ($stateProvider, $urlRouterProvider) {
 			controller: 'ContactController as vm'
 		})
 
-	$urlRouterProvider.otherwise('/#/')
+	$urlRouterProvider.otherwise('/')
 }
 
 export { config }
