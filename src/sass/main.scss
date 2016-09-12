@@ -5,6 +5,8 @@
 .header {
 	position: absolute;
 	right: 0;
+	top: 0;
+	padding: 5px;
 	height: 60px;
 	line-height: 60px;
 	a {
@@ -44,7 +46,7 @@
 }
 
 .home-hero {
-	background-image: url('../../images/home-hero.jpg');
+	background-image: url('../images/home-hero.jpg');
 	height: 300px;
 	width: 100%;
 	font-size: 40px;
@@ -57,7 +59,7 @@
 }
 
 .contact-hero {
-	background-image: url('../../images/contact-hero.jpg');
+	background-image: url('../images/contact-hero.jpg');
 	height: 300px;
 	width: 100%;
 	font-size: 40px;
@@ -70,7 +72,7 @@
 }
 
 .projects-hero {
-	background-image: url('../../images/projects-hero.jpg');
+	background-image: url('../images/projects-hero.jpg');
 	height: 300px;
 	width: 100%;
 	font-size: 40px;
@@ -90,22 +92,26 @@
 .bio {
 	margin-top: 20px;
 	text-align: center;
+	width: 100%;
 	p {
+		min-height: 150px;
 		line-height: 20px;
-		width: 50%;
+		width: 90%;
 		display: inline-block;
 		vertical-align: text-top;
 		text-align: center;
 		padding: 15px 10px;
-		margin: 10px;
-		margin-top: 0;
+		margin: 0;
 		border: 2px solid black;
+	}
+	div {
+		display: inline-block;
 	}
 }
 
 .box-header {
 	margin-top: 20px;
-	width: 50.3%;
+	width: 91%;
 	padding: 10px;
 	line-height: 36px;
 	display: inline-block;
@@ -114,6 +120,7 @@
 }
 
 .box1 {
+	width: 40%;
 	opacity: 0;
 	animation: fadein 2s;
 	-moz-animation: fadein 2s;
@@ -126,6 +133,7 @@
 }
 
 .box2 {
+	width: 40%;
 	opacity: 0;
 	animation: fadein 2s;
 	animation-delay: .5s;
@@ -142,6 +150,7 @@
 }
 
 .box3 {
+	width: 40%;
 	opacity: 0;
 	animation: fadein 2s;
 	animation-delay: 1s;
@@ -158,6 +167,7 @@
 }
 
 .box4{
+	width: 40%;
 	opacity: 0;
 	animation: fadein 2s;
 	animation-delay: 1.5s;
@@ -198,15 +208,15 @@
 
 .button-link {
 	text-decoration: none;
-	margin: 25px 80px;
 };
 
 .button1 {
 	width: 120px;
-	display: inline-block;
+	vertical-align: top;
 	line-height: 50px;
 	text-align: center;
 	color: #fff;
+	margin: 20px;
 	background-color: black;
 	border-radius: 3px;
 };
@@ -243,14 +253,15 @@
 };
 
 .left {
-	background-color: #EAEBEB;
 	width: 50%;
 	display: inline-block;
+	float: left;
 };
 
 .right {
 	width: 50%;
 	display: inline-block;
+	float: right;
 };
 
 .p-title {
@@ -280,7 +291,7 @@
 	width: 50%;
 	display: inline-block;
 	vertical-align: top;
-	background-image: url('../../images/github-social.jpg');
+	background-image: url('../images/github-social.jpg');
 	background-repeat: no-repeat;
 	text-align: center;
 };
@@ -291,7 +302,7 @@
 	width: 50%;
 	display: inline-block;
 	vertical-align: top;
-	background-image: url('../../images/portfolio.jpg');
+	background-image: url('../images/portfolio.jpg');
 	background-repeat: no-repeat;
 	text-align: center;
 };
@@ -302,7 +313,7 @@
 	width: 50%;
 	display: inline-block;
 	vertical-align: top;
-	background-image: url('../../images/insta-clone.jpg');
+	background-image: url('../images/insta-clone.jpg');
 	background-repeat: no-repeat;
 	text-align: center;
 };
@@ -313,7 +324,7 @@
 	width: 50%;
 	display: inline-block;
 	vertical-align: top;
-	background-image: url('../../images/timeline.jpg');
+	background-image: url('../images/timeline.jpg');
 	background-repeat: no-repeat;
 	text-align: center;
 };
@@ -324,7 +335,7 @@
 	width: 50%;
 	display: inline-block;
 	vertical-align: top;
-	background-image: url('../../images/soundcloud-clone.jpg');
+	background-image: url('../images/soundcloud-clone.jpg');
 	background-repeat: no-repeat;
 	text-align: center;
 };
@@ -335,7 +346,7 @@
 	width: 50%;
 	display: inline-block;
 	vertical-align: top;
-	background-image: url('../../images/restaurant.jpg');
+	background-image: url('../images/restaurant.jpg');
 	background-repeat: no-repeat;
 	text-align: center;
 };
@@ -387,4 +398,72 @@
 .github {
 	height: 20px;
 	width: 20px;
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+@media screen and (max-width: 450px) {
+	.header {
+		width: 98%;
+		padding: 1%;
+		text-align: center;
+	}
+
+	.headline {
+		height: 200px;
+		line-height: 220px;
+	}
+
+	.home-hero, .projects-hero, .contact-hero {
+		height: 200px;
+	}
+
+	.box1,.box2,.box3,.box4 {
+		width: 85%;
+	}
+
+	.page-intro {
+		.intro-headline {
+			padding-top: 20px;
+			padding-bottom: 0;
+		}
+		p {
+			padding: 15px;
+		}
+	}
+
+	.left, .right {
+		width: 100%;
+		height: 400px;
+	}
+
+	.github-social, .portfolio-builder, .insta-clone, .responsive-timeline, .soundcloud-clone, .restaurant-mockup {
+		width: 100%;
+		height: 400px;
+	}
+
+	.project {
+		text-align: center;
+		height: 800px;
+	}
+
+	.project-info {
+		padding: 5%;
+		width: 90%;
+		height: 360px;
+	}
+
+	.project-buttons {
+		line-height: 90px;
+		width: 100%;
+		padding: 90px 0;
+		height: 220px;
+	}
+
+	.contact-info {
+		height: 280px;
+		padding: 20px 0;
+	}
 }
